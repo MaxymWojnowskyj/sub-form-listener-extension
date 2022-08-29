@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Popup</title>
+</head>
+
+<link rel="stylesheet" href="/css/popup.css">
+
+<body>
+    <div id="savedTasks"></div>
+    <div id="taskDetails">
+        <div id="url-row" class="input-row">
+            <input id="url" class="task-input" disabled></input>
+            <button id="copy-url" class="copy-btn">Copy URL</button>
+        </div>
+        <div id="captcha-row" class="input-row">
+            <input id="captcha" class="task-input" disabled></input>
+            <button id="copy-captcha">Copy Captcha Sitekey</button>
+        </div>
+        <div id="table-wrapper">
+            <table>
+                <thead>
+                    <tr id="googleForm-header">
+                        <th>Input Id</th>
+                        <th>Input Data</th>
+                    </tr>
+                    <tr id="typeForm-header">
+                        <th>Input Id</th>
+                        <th>Input Type</th>
+                        <th>Choice Id</th>
+                        <th>Input Data</th>
+                    </tr>
+                </thead>
+                <tbody id="inputs-tbody"></tbody>
+            </table>
+        </div>
+        <div id="export-modal" class="modal">
+            <div id="modalContent">
+                <span id="close">&times;</span>
+                <input id="fileName" placeholder="File Name"></input>
+                <button id="exportFile">Export Inputs File</button>
+            </div>
+        </div>
+        <button id="cancel">Cancel</button>
+        <button id="export">Export Inputs</button>
+    </div>
+    <script src="/js/popup.js"></script>
+</body>
+
+</html>

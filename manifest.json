@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "COG Raffle Ext",
+  "version": "1.0.0",
+  "description": "Raffle Bot ext tool",
+  "permissions": [
+    "storage",
+    "webRequest",
+    "https://docs.google.com/*",
+    "https://www.google.com/*",
+    "https://*.typeform.com/*"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "images/scorch-logo-128.png",
+    "400": "images/scorch-logo-400.png"
+  },
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ],
+    "persistent": true
+  }
+}
